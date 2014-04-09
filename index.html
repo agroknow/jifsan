@@ -20,9 +20,13 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- AgroKnow -->
-	<base href="/Users/higher2fly/Agro-Know/projects_UX/jifsan/">
+	<!-- get base url dynamically to avoid collisions between 'www.domain...' and 'domain...' -->
+	<script>
+      document.write('<base href="' + document.location + '" />');
+	</script>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<!-- 	<link rel="stylesheet/less" type="text/css" href="css/style.less" /> -->
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
 	<!-- AgroKnow -->
 
 

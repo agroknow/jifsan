@@ -41,53 +41,19 @@ listing.config(['$routeProvider',
 		$routeProvider.
 			// - (AKIF)
 			//training
-			when('/training/search/', {
-				templateUrl: 'templates/akif_train_search.html',
-				controller: 'listingController'
-			}).
-			when('/training/search/:search_param', {
-				templateUrl: 'templates/akif_train_search.html',
-				controller: 'listingController'
-			}).
-			//educational resources
-			when('/educational/search/', {
-				templateUrl: 'templates/akif_edu_search.html',
-				controller: 'listingController'
-			}).
-			when('/educational/search/:search_param', {
-				templateUrl: 'templates/akif_edu_search.html',
+			when('/search/', {
+				templateUrl: 'templates/search.html',
 				controller: 'listingController'
 			}).
 			//view-item
-			when('/item', {
-				templateUrl: 'templates/akif_item.html',
+			when('/item/', {
+				templateUrl: 'templates/item.html',
 				controller: 'viewItemController'
 			}).
 			when('/item/:itemId', {
-				templateUrl: 'templates/akif_item.html',
+				templateUrl: 'templates/item.html',
 				controller: 'viewItemController'
 			}).
-
-
-			// - (AGRIF)
-			//research publications
-			when('/publications/search/', {
-				templateUrl: 'templates/agrif_search.html',
-				controller: 'listingController'
-			}).
-			when('/publications/search/:search_param', {
-				templateUrl: 'templates/agrif_search.html',
-				controller: 'listingController'
-			}).
-			when('/publication-item', {
-				templateUrl: 'templates/agrif_item.html',
-				controller: 'agris-viewItemController'
-			}).
-			when('/publication-item/:itemId', {
-				templateUrl: 'templates/agrif_item.html',
-				controller: 'agris-viewItemController'
-			}).
-
 			//general
 			when('/', {
 				templateUrl: 'templates/main.html',

@@ -53,7 +53,6 @@ body{
 
 	display:table;
 	margin:0px auto;
-	.rounded-corners(10px);
 	padding:1em 0;
 	max-width: 1000px;
 }
@@ -79,66 +78,6 @@ body{
 }
 
 
-footer {
-	width:60%;
-	height: 120px;
-	padding-top: 20px;
-	margin: 50px auto 0px;
-	text-align: center;
-	border-top: 1px solid rgba(0,0,0,0.3);
-}
-
-#header {
-	background-image: url('../assets/images/gfsp_logo.png');
-	min-height: 150px;
-	max-width: 100%;
-	min-width: 1000px;
-	margin:0px auto;
-	background-repeat: no-repeat;
-	background-color: white;
-	background-position: center;
-	.rounded-corners(5px);
-	box-shadow: 10px 0px 6px rgba(0, 0, 0, 0.2);
-
-	/* tablet */
-	@media all and (min-width: 480px) and (max-width: 768px) {
-		/*
-		  background-image: url('../assets/images/gfsp.png');
-		  min-height: 100px;
-		*/
-		min-width: 100%;
-	}
-	/* mobile */
-	@media all and (max-width: 480px) {
-		background-image: url('../assets/images/gfsp_min_logo.png');
-		min-height: 100px;
-		min-width: 100%;
-	}
-}
-
-#footer {
-	min-height: 100px;
-	max-width: 100%;
-	min-width: 1000px;
-	margin:0px auto;
-	background-repeat: no-repeat;
-	background-color: white;
-	background-position: center;
-	.rounded-corners(5px);
-	box-shadow: 10px 0px 6px rgba(0, 0, 0, 0.2);
-
-	/* tablet */
-	@media all and (min-width: 480px) and (max-width: 768px) {
-		min-height: 100px;
-		min-width: 100%;
-	}
-	/* mobile */
-	@media all and (max-width: 480px) {
-		min-height: 100px;
-		min-width: 100%;
-	}
-}
-
 
 #main_content {
 
@@ -153,11 +92,10 @@ footer {
 .landing_links{
 
 	display: table;
-	.rounded-corners(10px);
 	background-color: rgba(255,255,255,0.8);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-	margin:10px auto;
-	padding:10px 0px;
+	margin: 0px auto 20px;
+	padding:0px;
 
 	h3 {
 		font-weight: 300;
@@ -165,7 +103,6 @@ footer {
 		margin: 0px 0px 5px 0px;
 		color: white;
 		background-color: @navy_blue;
-		.rounded-corners-top(10px);
 	}
 
 	.link {
@@ -184,52 +121,31 @@ footer {
 		}
 	}
 
-	.training_course {
-		background-image: url('../assets/images/training_course.png');
+	.analysis {
+		background-image: url('../assets/images/analysis.png');
 	}
 
-	.open_educational {
-		background-image: url('../assets/images/open_educational.png');
+	.chemistry {
+		background-image: url('../assets/images/chemistry.png');
 	}
 
-	.research_publications {
-		background-image: url('../assets/images/research_publications.png');
+	.microbiology {
+		background-image: url('../assets/images/microbiology.png');
 	}
 
-	.incident {
-		background-image: url('../assets/images/incident_inactive.png');
-		&:hover {
-			text-decoration: none;
-		}
+	.pesticide_analysis {
+		background-image: url('../assets/images/pesticide_analysis.png');
 	}
 
-	.haccp {
-		background-image: url('../assets/images/haccp.gif');
+	.salmonela {
+		background-image: url('../assets/images/salmonela.png');
 	}
 
-	.publications {
-		background-image: url('../assets/images/publications_inactive.png');
-
-		&:hover {
-			text-decoration: none;
-		}
+	.webinar {
+		background-image: url('../assets/images/webinar.png');
 	}
 
-	.stats {
-		background-image: url('../assets/images/stats.png');
-	}
 
-	.food_security {
-		background-image: url('../assets/images/food_security.png');
-	}
-
-	.foodborne {
-		background-image: url('../assets/images/foodborne_disease.png');
-	}
-
-	.codex {
-		background-image: url('../assets/images/codex_alimentarius.png');
-	}
 
 	/* PROVIDERS */
 	.provider {
@@ -340,6 +256,7 @@ footer {
 	    background: #eee;
 	    font-size: 1.2em;
 	    border-bottom: 2px solid #41647b;
+	    line-height: 1.3;
 
 	    &:focus {
 		    outline: 0;
@@ -644,6 +561,7 @@ footer {
 
 		.results {
 			padding-left: 10px;
+			margin: 0px;
 
 			li {
 				margin-top:10px;
