@@ -27,6 +27,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+
+	<script type="text/javascript" src="https://agroknow.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e/en_US-8bdlft-1988229788/6318/8/1.4.10/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=02ef7a6d"></script>
 	<!-- AgroKnow -->
 
 
@@ -49,7 +51,7 @@
 
 </head>
 
-<body ng-app="akListing" ng-controller="mainController" >
+<body ng-app="akListing"  >
 
     <div id="page_container" class="jifsan_bg">
 
@@ -155,7 +157,7 @@
 
         <div id="home">
         <!-- FINDER-APP -->
-		<div id="akListing" ng-cloak>
+		<div id="akListing" ng-controller="mainController" ng-cloak>
 	        <div ng-view class="col-md-12">
 	        </div>
 		</div>

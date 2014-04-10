@@ -111,7 +111,7 @@ listing.controller("mainController", function($rootScope, $scope, $http, $locati
 		switch(facets_type) {
 			case 'training' :
 				$scope.facets = ['organization','language', 'learningResourceTypes'];
-				$scope.limit_facets = {"set":["aglrgfsp"]};
+				$scope.limit_facets = {"organization":["The Joint Institute for Food Safety and Applied Nutrition (JIFSAN)"]};
 				mappings_file = 'config/training_facets_mappings.json';
 				break;
 			default:
@@ -150,9 +150,13 @@ listing.controller("mainController", function($rootScope, $scope, $http, $locati
 	};
 
 	//Function for query submission
-	$scope.submit = function() {
+	// type : defines the search path
+	$scope.submit = function(type) {
 		if (this.search_query) {
 		  $rootScope.query = "q=" + this.search_query;
+
+		  if(type){ $location.path( type + '/' ); }
+
 		  $location.search('q',this.search_query);
 		  this.search_query = '';
 
