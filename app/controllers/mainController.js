@@ -110,8 +110,8 @@ listing.controller("mainController", function($rootScope, $scope, $http, $locati
 
 		switch(facets_type) {
 			case 'training' :
-				$scope.facets = ['organization','language', 'learningResourceTypes'];
-				$scope.limit_facets = {"organization":["The Joint Institute for Food Safety and Applied Nutrition (JIFSAN)"]};
+				$scope.facets = ['set','language', 'contexts', 'learningResourceTypes'];
+				$scope.limit_facets = {"set":["aglrjifsan","aglrfaocdx"]}; //{"organization":["The Joint Institute for Food Safety and Applied Nutrition (JIFSAN)"]};
 				mappings_file = 'config/training_facets_mappings.json';
 				break;
 			default:

@@ -1,20 +1,36 @@
 {
   "contexts": [
     {
+      "human": "Webinar",
+      "machine": "special education"
+    },
+    {
+      "human": "Risk Analysis",
+      "machine": "professional development"
+    },
+    {
+      "human": "Chemistry Lab",
+      "machine": "continuing education"
+    },
+    {
+      "human": "Microbiology Lab",
+      "machine": "vocational education"
+    },
+    {
       "human": "Education",
       "machine": "education"
     },
     {
-      "human": "Higher",
-      "machine": "higher"
+      "human": "Higher Education",
+      "machine": "higher education"
     },
     {
       "human": "Compulsory",
       "machine": "compulsory"
     },
     {
-      "human": "Distance",
-      "machine": "distance"
+      "human": "Distance Education",
+      "machine": "distance education"
     },
     {
       "human": "Vocational",
@@ -33,8 +49,8 @@
       "machine": "continuing"
     },
     {
-      "human": "Policy",
-      "machine": "policy"
+      "human": "Policy Making",
+      "machine": "policy making"
     },
     {
       "human": "Making",
@@ -79,7 +95,7 @@
 
   "facets": [
     {
-      "human": "Sets",
+      "human": "Collection",
       "machine": "set"
     },
     {
@@ -121,6 +137,12 @@
     {
       "human": "Classification",
       "machine": "controlled.classification.CCL"
+    }
+  ],
+  "learningResourceTypes":[
+  	{
+      "human": "Other",
+      "machine": "n/a"
     }
   ],
   "language": [
@@ -333,6 +355,10 @@
     {
       "human": "Green OER",
       "machine": "greenoer"
+    },
+    {
+      "human": "JIFSAN",
+      "machine": "aglrjifsan"
     },
     {
       "human": "Digital Green",
